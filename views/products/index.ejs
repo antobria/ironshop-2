@@ -1,0 +1,13 @@
+<ul id="products-list">
+  <% products.forEach((product) => { %>
+    <li>
+      <img src="<%= product.imageUrl %>"/>
+
+      Name: <%= product.name %>,
+      Desc: <%= product.description %>,
+      Price: <%= product.price %> €
+    </li>
+  <% }) %>
+</ul>
+
+<a href="/products/new">Add Product</a>
