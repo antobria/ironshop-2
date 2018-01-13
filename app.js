@@ -25,4 +25,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Routes
 app.use('/products', productsRoute);
 
+app.use('/', (_, res) => res.redirect('/products'));
+
 module.exports = app;
