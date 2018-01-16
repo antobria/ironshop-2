@@ -21,7 +21,7 @@ module.exports.create = (req, res, next) => {
 
   newProduct.save().then((product) => {
     res.redirect('/products');
-  })
+  });
 };
 
 module.exports.show = (req, res, next) => {
